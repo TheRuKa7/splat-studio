@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "splat-capture",
+    "slug": "splat-capture",
+    "scheme": "splat",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.theruka.splat",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Capture video for 3D Gaussian Splatting.",
+        "NSMicrophoneUsageDescription": "Optional audio alongside capture video.",
+        "NSPhotoLibraryUsageDescription": "Save and re-open captures.",
+        "NSMotionUsageDescription": "Use the gyro to coach even orbit coverage."
+      }
+    },
+    "android": {
+      "package": "com.theruka.splat",
+      "permissions": ["CAMERA", "RECORD_AUDIO", "READ_MEDIA_VIDEO", "READ_MEDIA_IMAGES"]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        { "cameraPermission": "Capture video for 3D Gaussian Splatting." }
+      ],
+      "expo-media-library"
+    ],
+    "experiments": { "typedRoutes": true }
+  }
+}
