@@ -1,0 +1,23 @@
+{
+  "$schema": "./scenes.schema.json",
+  "scenes": [
+    {
+      "id": "kitchen",
+      "label": "Kitchen (indoor)",
+      "url": "https://example.r2.dev/scenes/kitchen.ksplat",
+      "thumbnail": "/thumbs/kitchen.jpg"
+    },
+    {
+      "id": "library-corner",
+      "label": "Library corner (indoor)",
+      "url": "https://example.r2.dev/scenes/library.ksplat",
+      "thumbnail": "/thumbs/library.jpg"
+    },
+    {
+      "id": "garden",
+      "label": "Garden (outdoor)",
+      "url": "https://example.r2.dev/scenes/garden.ksplat",
+      "thumbnail": "/thumbs/garden.jpg"
+    }
+  ]
+}
